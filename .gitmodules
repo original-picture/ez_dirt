@@ -1,0 +1,12 @@
+[submodule "lib/JUCE"]
+	path = lib/JUCE
+	url = https://github.com/juce-framework/JUCE
+[submodule "lib/ez_juce"]
+	path = lib/ez_juce
+	url = https://github.com/original-picture/ez_juce
+[submodule "lib/ez_audio"]
+	path = lib/ez_audio
+	url = https://github.com/original-picture/ez_audio
+[submodule "lib/ez_utils"]
+	path = lib/ez_utils
+	url = https://github.com/original-picture/ez_utils
