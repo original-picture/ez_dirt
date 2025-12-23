@@ -1,5 +1,5 @@
 
-set(PROJECT_NAME ez_juce_plugin_template)
+set(PROJECT_NAME ez_dirt)
 
 cmake_minimum_required(VERSION 3.22)
 
@@ -19,7 +19,7 @@ juce_add_plugin(${PROJECT_NAME}
     # EDITOR_WANTS_KEYBOARD_FOCUS TRUE/FALSE    # Does the editor need keyboard focus?
     COPY_PLUGIN_AFTER_BUILD TRUE        # Should the plugin be installed to a default location after building?
     PLUGIN_MANUFACTURER_CODE OrPi               # A four-character manufacturer id with at least one upper-case character
-    PLUGIN_CODE ${3Zjp}                            # A unique four-character plugin id with exactly one upper-case character
+    PLUGIN_CODE ${D1rt}                            # A unique four-character plugin id with exactly one upper-case character
                                                 # GarageBand 10.3 requires the first letter to be upper-case, and the remaining letters to be lower-case
     FORMATS AU VST3 Standalone                  # The formats to build. Other valid formats are: AAX Unity VST AU AUv3
     PRODUCT_NAME ${PROJECT_NAME})        # The name of the final executable, which can differ from the target name
