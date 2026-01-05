@@ -28,6 +28,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC lib/ez_audio lib/ez_juce)
 
 # add_subdirectory(lib/ez_juce)
 # link_ez_juce_to(${PROJECT_NAME})
+add_subdirectory(lib/ez_utils)
 
 
 
@@ -35,6 +36,7 @@ target_sources(${PROJECT_NAME}
     PRIVATE
         editor.cpp
         processor.cpp
+        ez_dirt_dsp.cpp
         lib/ez_juce/ez_impl.cpp
         # lib/ez_juce/ez_processor.cpp
         )
@@ -52,5 +54,7 @@ target_link_libraries(${PROJECT_NAME}
         juce::juce_audio_utils
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
-        juce::juce_recommended_warning_flags)
+        juce::juce_recommended_warning_flags
+
+        ez_utils)
 
